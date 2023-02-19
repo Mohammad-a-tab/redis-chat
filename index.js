@@ -1,0 +1,9 @@
+const express = require("express");
+const app = express();
+const http = require("http");
+const {createClient} = require("redis");
+const socketIO = require("socket.io");
+const redisClient = createClient();
+const server = http.createServer(app);
+const PORT = 4001;
+const io = socketIO(server, {cors: {origin: "*"}});
