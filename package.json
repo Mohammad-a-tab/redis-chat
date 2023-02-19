@@ -1,0 +1,26 @@
+{
+  "name": "redis-chat",
+  "version": "1.0.0",
+  "description": "Creating a chat(socket) using Redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-a-tab/redis-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammad-a-tab/redis-chat/issues"
+  },
+  "homepage": "https://github.com/Mohammad-a-tab/redis-chat#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "redis": "^4.6.4",
+    "socket.io": "^4.6.0"
+  }
+}
