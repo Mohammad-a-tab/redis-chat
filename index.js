@@ -9,7 +9,7 @@ const server = http.createServer(app);
 const PORT = 4001;
 const io = SocketIO(server, {cors: {origin:"*"}});
 async function sendMessages(socket){
-    redisClient.lRange("messages", 0, -1, (err, data) => {
+    redisClient.lrange("messages", 0, -1, (err, data) => {
         data.map(item => {
             const [username, message] = item.split(":");
             socket.emit("message", {
